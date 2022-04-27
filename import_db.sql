@@ -61,7 +61,8 @@ INSERT INTO
   questions (title,body,user_id)
 VALUES
   ('Address ??','What is the address??',(SELECT id FROM users WHERE fname = 'Mikey' AND lname = 'Hollander')),
-  ('Is there a microwave on campus?','I was promised there would be a microwave on campus. What gives?',(SELECT id FROM users WHERE fname = 'Vivian' AND lname = 'Chen'));
+  ('Is there a microwave on campus?','I was promised there would be a microwave on campus. What gives?',(SELECT id FROM users WHERE fname = 'Vivian' AND lname = 'Chen')),
+  ('room ??','What about the room??',(SELECT id FROM users WHERE fname = 'Mikey' AND lname = 'Hollander'));
 
 INSERT INTO
   question_follows (user_id,question_id)
